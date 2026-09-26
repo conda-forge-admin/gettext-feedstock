@@ -260,16 +260,31 @@ outputs:
       files:
         - an.po
       commands:
-        {% set programs = [
-          "gettext", "ngettext", "printf_gettext", "printf_ngettext", "envsubst",
-          "msgcmp", "msgfmt", "msgmerge", "msgunfmt", "xgettext", "msgattrib",
-          "msgcat", "msgcomm", "msgconv", "msgen", "msgexec", "msgfilter",
-          "msggrep", "msginit", "msgpre", "msguniq", "recode-sr-latin",
-          "autopoint", "gettextize", "po-fetch",
-        ] %}
-        {% for program in programs %}
-        - {{ program }} --version
-        {% endfor %}
+        - gettext --version
+        - ngettext --version
+        - printf_gettext --version
+        - printf_ngettext --version
+        - envsubst --version
+        - msgcmp --version
+        - msgfmt --version
+        - msgmerge --version
+        - msgunfmt --version
+        - xgettext --version
+        - msgattrib --version
+        - msgcat --version
+        - msgcomm --version
+        - msgconv --version
+        - msgen --version
+        - msgexec --version
+        - msgfilter --version
+        - msggrep --version
+        - msginit --version
+        - msgpre --version
+        - msguniq --version
+        - recode-sr-latin --version
+        - autopoint --version
+        - gettextize --version
+        - po-fetch --version
         - test -f ${PREFIX}/bin/gettext.sh
         # 'spit' must be the C program, not the Python fallback script
         - spit --version
