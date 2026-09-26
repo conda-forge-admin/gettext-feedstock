@@ -24,7 +24,6 @@ build:
 
 requirements:
   build:
-    - libtool
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
@@ -51,7 +50,6 @@ outputs:
     script: install-libintl.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -83,7 +81,6 @@ outputs:
     script: install-libintl-devel.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -113,7 +110,6 @@ outputs:
     script: install-asprintf.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -145,7 +141,6 @@ outputs:
     script: install-asprintf-devel.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -174,7 +169,6 @@ outputs:
     script: install-libgettextpo.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -207,7 +201,6 @@ outputs:
     script: install-libgettextpo-devel.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -235,7 +228,6 @@ outputs:
         - {{ compiler('cxx') }}
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -312,7 +304,6 @@ outputs:
     script: install-gettext.sh
     requirements:
       build:
-        - libtool
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
